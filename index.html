@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Green Swap</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://kit.fontawesome.com/0038dd4693.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style type="text/css">
+   		nav li::after {
+  background-color: #4CBB17;
+  content: "";
+  width: ;
+  height: 3px;
+  left: 0;
+  right: 5;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+nav li:hover::after {
+  width: 100%;
+}
+ nav li{
+	overflow: hidden;
+	position: relative;
+	font-weight: bold;
+}
+ input[type=text]{
+  width: 100%;
+  padding: 15px;
+  border-color: #4CBB17;
+  border-radius: 5px;
+  display: inline-block;
+}
+.icon {  
+   text-align: left;
+   
+}
+#one{
+position: relative;
+	left:8px;
+		top:40px;}
+		@media screen and (max-width: 450px)
+		{
+			nav li{
+		font-size: 12px;
+	}
+	label{
+		font-size: 12px;
+		}
+		input[type=text]{
+			font-size: 13px;
+		}
+		i{
+			font-size: 12px;
+		}
+	}
+   </style>
+
+</head>
+<body>
+<div  class="container-fluid text-center" id="one">
+	<nav class="navbar navbar-expand-sm w-100 navbar-light">
+		<div class="navbar-brand justify-content-center" style="width: 30%;"> 
+		<a href="#"><img src="logo.png" width="100%"></a>
+		</div>
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsenavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse text-center collapse" id="collapsenavbar" style="width: 100%">
+		<ul class="navbar-nav justify-content-center " id="three">
+			<li class="navbar-item mx-1 p-2">
+					<a href="#home.html" class="navbar-link text-dark text-decoration-none">Home</a></li>
+				<li class="navbar-item mx-1 p-2">
+					<a href="#index.html" class="navbar-link text-dark text-decoration-none">About</a></li>
+				<li class="navbar-item mx-1 p-2">
+                    <a href="#why" class="navbar-link text-dark text-decoration-none">YourWorld3</a></li>
+				<li class="navbar-item mx-1 p-2 ">
+				    <a href="#Tokenomics" class="navbar-link text-dark text-decoration-none">ICO</a></li>
+				<li class="navbar-item mx-1 p-2 ">
+					<a href="#Roadmap" class="navbar-link text-dark text-decoration-none"><button type="button" data-toggle="modal" data-target="#myModal" style="border:none; font-weight: bold;background-color: transparent;">  Green Swap</button></a></li>
+				<li class="navbar-item mx-1 p-2">
+					<a href="#Team" class="navbar-link text-dark text-decoration-none">NFt's</a></li>
+			    <li class="navbar-item mx-1 p-2">
+					<a href="#signup" class="navbar-link text-dark text-decoration-none ">Karbun</a>
+				</li>
+				<li class="navbar-item mx-1 p-2 ">
+					<a href="#Roadmap" class="navbar-link  text-dark text-decoration-none">Sovergin Coins</a>
+				</li>
+				<li class="navbar-item mx-1 p-2 ">
+					<a href="#Roadmap" class="navbar-link  text-dark text-decoration-none">Contact Us</a>
+				</li>
+			</ul>
+			<ul class=" nav navbar-nav"id="hey">
+				<button class="btn text-light shadow-lg mx-lg-5 p-1 px-3" style="background-color:#4CBB17; border-radius: 10px;">Login
+				</button>
+		</ul>
+		</div>
+	</nav>
+</div>
+	<div id="myModal" class="modal fade mt-5" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="border-color: white;border-width: 3px;" id="myForm">
+    	<div class="container">
+      <div class="modal-header">
+        <h4 class="modal-title text-center font-weight-bold">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+</svg> Green Swap</h4>
+      </div>
+      <div class="modal-body">
+         <label> Swap From</label>
+         <div id="one" class="outsie">
+         <i class="fa fa-bitcoin icon"></i>BTC<i class="fas fa-angle-down"></i>
+     </div>
+       		<input type="text" name="" placeholder="          No. of coins">
+       		<div class="text-center my-3">
+       		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+</svg>
+</div>
+       		<label> Swap to</label>
+       		<div id="one" class="outsie">
+         <i class="fab fa-ethereum icon"></i>ETH<i class="fas fa-angle-down"></i>
+     </div>
+       		<input type="text" name="" placeholder="          No. of coins">
+       		<button class="mt-4 p-2 border-0" style="width: 100%; background-color: #4CBB17; color: white; border-radius: 8px;">Swap Coins</button>
+       </div>
+   </div>
+</div>
+</div>
+</div>
+</body>
+</body>
+</html>
